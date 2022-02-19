@@ -1,0 +1,20 @@
+@tailwind base;
+
+@layer base {
+  a,
+  button {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-400;
+  }
+
+  [type='checkbox'] {
+    @apply text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-400;
+  }
+
+  [type='radio'] {
+    @apply text-blue-400 border-gray-400 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-400;
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
